@@ -5,50 +5,121 @@
     <title>ClimateSite</title>
 
     <style>
-        body{
+        body {
             background-color: yellow;
         }
+
         #container {
             width: 1300px;
             margin-left: auto;
             margin-right: auto;
         }
-        header{
+
+        header {
             background-color: black;
             color: white;
             text-align: center;
         }
-        nav{
+
+        nav {
             background-color: lightgreen;
-            height: 80px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
-        main{
+
+        main {
             background-color: lightblue;
             height: 400px;
+
+            padding-left: 20px;
+            padding-right: 20px;
         }
-        footer{
+
+        footer {
             background-color: lightpink;
+            text-align: center;
+        }
+
+        table {
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        td {
+            border: 2px solid black;
+            padding: 20px;
+            font-weight: bold;
+            margin-left: 20px;
         }
     </style>
 </head>
 <body>
+
 <div id="container">
 
     <header>
-        <img src="images/logo.png" alt="Logo">
+        <a href="homepage.html" title="Go to homepage">
+            <img src="images/logo.png" width=1300 height=88 alt="Logo">
+        </a>
     </header>
 
     <nav>
-        nav
+        <table align="center">
+            <tr>
+                <td>
+                    <a href="homepage.html">Home</a>
+                </td>
+                <td>
+                    <a href="evidence.html">Evidence</a>
+                </td>
+                <td>
+                    <a href="causes.html">Causes</a>
+                </td>
+                <td>
+                    <a href="effects.html">Effects</a>
+                </td>
+                <td>
+                    <a href="vitalsigns.html">Vital signs</a>
+                </td>
+                <td>
+                    <a href="polls.html">Polls</a>
+                </td>
+                <td>
+                    <a href="faq.html">FAQ</a>
+                </td>
+            </tr>
+        </table>
     </nav>
 
     <main>
-        main
+
+        <h1 style="margin-top: 0; padding-top: 20px">Climate is changing - get used to</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate vitae velit a blandit. Integer
+            bibendum arcu in diam suscipit ultricies. Nam ullamcorper justo non mi imperdiet, eu suscipit est viverra.
+            In suscipit sollicitudin eleifend. Nam tellus metus, auctor quis consectetur sed, porta dictum ante. Donec a
+            maximus mi. Nunc tempus efficitur est a dapibus. Nunc eget quam sed felis lobortis efficitur. Morbi vel
+            interdum arcu. Integer dapibus erat in nisl molestie viverra. Aenean tempus odio eget mauris convallis
+            viverra. Praesent volutpat lectus quis risus tempus elementum id ac nisi.
+        </p>
+        <h2>What's gonna happen?</h2>
+        <p>
+            Praesent massa libero, bibendum nec justo nec, mollis sollicitudin leo. Fusce malesuada vehicula mi, sit
+            amet tempor lectus eleifend id. Curabitur eleifend tincidunt ante, nec feugiat orci tincidunt faucibus. Ut
+            quis urna in est dictum ornare in vel nulla. Vestibulum dignissim imperdiet velit eu consectetur. Ut ut
+            velit lacinia, tempor mi dictum, porta neque. Cras dapibus dictum lectus, a blandit nulla lacinia in.
+            Praesent iaculis vehicula rutrum. Aenean maximus accumsan consequat. Curabitur eu faucibus augue. Aliquam ut
+            facilisis tellus. Vivamus condimentum massa quis massa lobortis finibus. Fusce at mauris vitae turpis
+            sodales euismod. Nunc quis consequat nulla. Pellentesque vel eros eget augue rhoncus ultrices. Aenean
+            tincidunt elit hendrerit quam aliquam, et ullamcorper mi faucibus.
+        </p>
     </main>
 
     <footer>
-        &copy; All rights reserved. Authors: Lisznianska, Koptyra, Wisniewski. Contact us at habababa@gmail.com or call 123456789
+        &copy; All rights reserved. Authors: Lisznianska, Koptyra, Wisniewski. Contact us at <a href="mailto:habababa@gmail.com">habababa@gmail.com</a> or call
+        123456789
     </footer>
 </div>
+
 </body>
 </html>
