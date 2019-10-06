@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ClimateSite</title>
+
+    <style>
+        body {
+            background-color: yellow;
+        }
+
+        #container {
+            width: 1300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background-color: lightgreen;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        main {
+            background-color: lightblue;
+            height: 400px;
+
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        footer {
+            background-color: lightpink;
+            text-align: center;
+        }
+
+        table {
+            border: 2px solid black;
+            padding: 5px;
+            margin: auto;
+        }
+
+        td {
+            border: 2px solid black;
+            padding: 20px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+
+    <header>
+        <a href="homepage.html" title="Go to homepage">
+            <img src="images/logo.png" width=1300 height=88 alt="Logo">
+        </a>
+    </header>
+
+    <nav>
+        <table>
+            <tr>
+                <td>
+                    <a href="homepage.html">Home</a>
+                </td>
+                <td>
+                    <a href="evidence.html">Evidence</a>
+                </td>
+                <td>
+                    <a href="causes.html">Causes</a>
+                </td>
+                <td>
+                    <a href="effects.html">Effects</a>
+                </td>
+                <td>
+                    <a href="emissions.html">Emissions</a>
+                </td>
+                <td>
+                    <a href="polls.html">Polls</a>
+                </td>
+                <td>
+                    <a href="faq.html">FAQ</a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <main>
+        <table style="border: 0">
+            <tr>
+                <td>
+                    <form style="padding-top: 10px">
+                        1. Which of these has the negative impact on the climate?<br>
+                        <label>
+                            <input type="checkbox" name="poll1" value="Coal">
+                        </label>Coal<br>
+                        <label>
+                            <input type="checkbox" name="poll1" value="Methane">
+                        </label>Methane<br>
+                        <label>
+                            <input type="checkbox" name="poll1" value="Meat">
+                        </label>Meat consumption<br>
+                        <label>
+                            <input type="checkbox" name="poll1" value="Solar">
+                        </label>Solar energy<br>
+                        <input type="submit" name="Submit">
+                    </form>
+                </td>
+                <td>
+                    <form style="padding-top: 10px">
+                        2. Which of the following is a greenhouse gas?<br>
+                        <label>
+                            <input type="radio" name="poll2" value="co2">
+                        </label>CO<sub>2</sub><br>
+                        <label>
+                            <input type="radio" name="poll2" value="ch4">
+                        </label>CH<sub>4</sub><br>
+                        <label>
+                            <input type="radio" name="poll2" value="water">
+                        </label>Water vapor<br>
+                        <label>
+                            <input type="radio" name="poll2" value="all">
+                        </label>All of the above<br>
+                        <input type="submit" name="Submit">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form style="padding-top: 10px">
+                        3. Which country emits the most carbon dioxide?<br>
+                        <label>
+                            <input type="text" name="answer">
+                        </label>
+                        <input type="submit" name="Submit">
+                    </form>
+                </td>
+                <td>
+                    <form style="padding-top: 10px">
+                        4. What percentage of the global greenhouse gas emissions does the transportation sector
+                        emit?<br>
+                        <label>
+                            <input type="radio" name="poll4" value="_1">
+                        </label>1%<br>
+                        <label>
+                            <input type="radio" name="poll4" value="_14">
+                        </label>14%<br>
+                        <label>
+                            <input type="radio" name="poll4" value="_33">
+                        </label>33%<br>
+                        <label>
+                            <input type="radio" name="poll4" value="_70">
+                        </label>70%<br>
+                        <input type="submit" name="Submit">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        &copy; All rights reserved. Authors: Lisznianska, Koptyra, Wisniewski. Contact us at <a
+            href="mailto:habababa@gmail.com">habababa@gmail.com</a> or call
+        123456789
+    </footer>
+</div>
+
+</body>
+</html>
