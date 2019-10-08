@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ClimateSite</title>
+
+    <style>
+        body {
+            background-color: yellow;
+        }
+
+        #container {
+            width: 1300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background-color: lightgreen;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        main {
+            background-color: lightblue;
+            margin-bottom: 0;
+            padding-bottom: 20px;
+            margin-top: 0;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        footer {
+            background-color: lightpink;
+            text-align: center;
+        }
+
+        table {
+            border: 2px solid black;
+            padding: 5px;
+            margin: auto;
+        }
+
+        td {
+            border: 2px solid black;
+            padding: 20px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+
+    <header>
+        <a href="homepage.html" title="Go to homepage">
+            <img src="images/logo.png" width=1300 height=88 alt="Logo">
+        </a>
+    </header>
+
+    <nav>
+        <table>
+            <tr>
+                <td>
+                    <a href="homepage.html">Home</a>
+                </td>
+                <td>
+                    <a href="evidence.html">Evidence</a>
+                </td>
+                <td>
+                    <a href="causes.html">Causes</a>
+                </td>
+                <td>
+                    <a href="effects.html">Effects</a>
+                </td>
+                <td>
+                    <a href="emissions.html">Emissions</a>
+                </td>
+                <td>
+                    <a href="polls.html">Polls</a>
+                </td>
+                <td>
+                    <a href="faq.html">FAQ</a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <main>
+
+        <h1>Give us your feedback!</h1>
+        <br>
+        <h3>Write your feedback</h3>
+        <form id="usrform">
+            Name: <input type="text" name="usrname">
+            <input type="submit">
+        </form>
+        <br>
+        <textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea>
+        <p><b>Note:</b> The form attribute is not supported in IE.</p>
+        <br>
+
+        <h3>Select you gender</h3>
+        <form>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+        </form>
+
+        <h3>Send us a file</h3>
+        <form>
+            Select a file:
+            <input type="file" name="myFile"><br><br>
+            <input type="submit">
+        </form>
+
+    </main>
+
+    <footer>
+        &copy; All rights reserved. Authors: Lisznianska, Koptyra, Wisniewski. Contact us at <a href="mailto:habababa@gmail.com">habababa@gmail.com</a> or call
+        123456789
+    </footer>
+</div>
+
+</body>
+</html>
