@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <base href="http://localhost:63342/WebBasedClimat/" target="_self">
     <title>ClimateSite</title>
-    <meta name="description" content="Our climate site">
+    <meta name="description" content="Our climate site - feedback">
+    <meta name="keywords=" content="climate, warming, temperature, feedback">
 
     <style>
         body {
@@ -31,11 +33,9 @@
         main {
             background-color: #81c784;
             margin-bottom: 0;
-            padding-bottom: 20px;
             margin-top: 0;
-            padding-top: 20px;
-            padding-left: 20px;
-            padding-right: 20px;
+            padding: 20px;
+            min-height: 380px;
         }
 
         footer {
@@ -101,18 +101,26 @@
         <br>
         <h3>Write your feedback</h3>
         <form id="usrform">
-            Name: <input type="text" name="usrname">
+            Name: <label>
+            <input type="text" name="usrname">
+        </label>
             <input type="submit">
         </form>
         <br>
-        <textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea>
+        <label>
+            <textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea>
+        </label>
         <p><b>Note:</b> The form attribute is not supported in IE.</p>
         <br>
 
         <h3>Select you gender</h3>
         <form>
-            <input type="radio" name="gender" value="male" checked> Male<br>
-            <input type="radio" name="gender" value="female"> Female<br>
+            <label>
+                <input type="radio" name="gender" value="male" checked>
+            </label> Male<br>
+            <label>
+                <input type="radio" name="gender" value="female">
+            </label> Female<br>
             <input type="radio" name="gender" value="other"> Other
         </form>
         <br>
@@ -128,12 +136,14 @@
         <p>Use the multiple attribute to allow the user to select more than one value.</p>
 
         <form>
-            <select name="actions" size="4" multiple>
-                <option value="Travelling by public transport">Travelling by public transport</option>
-                <option value="Recycling">Recycling</option>
-                <option value="Saving water">Saving water</option>
-                <option value="Saving energy">Saving energy</option>
-            </select>
+            <label>
+                <select name="actions" size="4" multiple>
+                    <option value="Travelling by public transport">Travelling by public transport</option>
+                    <option value="Recycling">Recycling</option>
+                    <option value="Saving water">Saving water</option>
+                    <option value="Saving energy">Saving energy</option>
+                </select>
+            </label>
             <br><br>
             <input type="submit">
         </form>
@@ -143,7 +153,8 @@
     </main>
 
     <footer>
-        &copy; All rights reserved. Authors: Lisznianska, Koptyra, Wisniewski. Contact us at <a href="mailto:habababa@gmail.com">habababa@gmail.com</a> or call
+        &copy; All rights reserved. Authors: Lisznianska, Koptyra, Wisniewski. Contact us at <a
+            href="mailto:habababa@gmail.com">habababa@gmail.com</a> or call
         123456789
     </footer>
 </div>

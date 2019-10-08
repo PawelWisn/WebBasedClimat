@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <base href="http://localhost:63342/WebBasedClimat/" target="_self">
     <title>ClimateSite</title>
-    <meta name="description" content="Our climate site">
+    <meta name="description" content="Our climate site - polls">
+    <meta name="keywords=" content="climate, warming, temperature, poll, quiz">
 
     <style>
         body {
@@ -31,11 +33,9 @@
         main {
             background-color: #81c784;
             margin-bottom: 0;
-            padding-bottom: 20px;
             margin-top: 0;
-            padding-top: 20px;
-            padding-left: 20px;
-            padding-right: 20px;
+            padding: 20px;
+            min-height: 380px;
         }
 
         footer {
@@ -96,7 +96,7 @@
     </nav>
 
     <main>
-        <table style="border: 0" >
+        <table style="border: 0">
             <tr>
                 <td>
                     <form style="padding-top: 10px">
@@ -114,6 +114,7 @@
                             <input type="checkbox" name="poll1" value="Solar">
                         </label>Solar energy<br>
                         <input type="submit" name="Submit">
+                        <input type="reset" value="Reset">
                     </form>
                 </td>
                 <td>
@@ -132,6 +133,7 @@
                             <input type="radio" name="poll2" value="all">
                         </label>All of the above<br>
                         <input type="submit" name="Submit">
+                        <input type="reset" value="Reset">
                     </form>
                 </td>
             </tr>
@@ -143,25 +145,22 @@
                             <input type="text" name="answer">
                         </label>
                         <input type="submit" name="Submit">
+                        <input type="reset" value="Reset">
                     </form>
                 </td>
                 <td>
                     <form style="padding-top: 10px">
-                        4. What percentage of the global greenhouse gas emissions does the transportation sector
-                        emit?<br>
-                        <label>
-                            <input type="radio" name="poll4" value="_1">
-                        </label>1%<br>
-                        <label>
-                            <input type="radio" name="poll4" value="_14">
-                        </label>14%<br>
-                        <label>
-                            <input type="radio" name="poll4" value="_33">
-                        </label>33%<br>
-                        <label>
-                            <input type="radio" name="poll4" value="_70">
-                        </label>70%<br>
+                        <label for="poll4">4. What percentage of the global greenhouse gas emissions does the
+                            transportation sector
+                            emit?<br></label>
+                        <select name="pollfour" id="poll4">
+                            <option value="_1">1%</option>
+                            <option value="_14">14%</option>
+                            <option value="_33">33%</option>
+                            <option value="_70">70%</option>
+                        </select>
                         <input type="submit" name="Submit">
+                        <input type="reset" name="Reset">
                     </form>
                 </td>
             </tr>
