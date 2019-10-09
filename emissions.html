@@ -5,7 +5,7 @@
     <base href="http://localhost:63342/WebBasedClimat/" target="_self">
     <title>ClimateSite</title>
     <meta name="description" content="Our climate site - emissions by country">
-    <meta name="keywords=" content="climate, warming, temperature, emissions">
+    <meta name="keywords" content="climate, warming, temperature, emissions">
 
     <style>
         body {
@@ -55,6 +55,20 @@
             font-weight: bold;
             margin-left: 20px;
         }
+        #emissionstable {
+            border: 3px solid black;
+            padding: 5px;
+            margin: auto;
+            font-size: 14px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        #emissionstable td, #emissionstable th{
+            border: 1px solid blue;
+            padding: 20px;
+            font-weight: normal;
+            margin-left: 20px;
+        }
     </style>
 </head>
 <body>
@@ -96,7 +110,7 @@
     </nav>
 
     <main>
-        <table style="font-size: 12px; text-align: center; border-collapse: collapse;">
+        <table id="emissionstable">
             <caption style="padding-top: 10px;font-size: 14px">Fossil CO<sub>2</sub> emissions by country</caption>
             <thead>
             <tr>
