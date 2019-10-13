@@ -24,6 +24,9 @@
             font-weight: normal;
             margin-left: 20px;
         }
+        #emissionstable caption{
+            padding-top: 10px;font-size: 14px
+        }
     </style>
 </head>
 <body>
@@ -66,7 +69,7 @@
 
     <main>
         <table id="emissionstable">
-            <caption style="padding-top: 10px;font-size: 14px">Fossil CO<sub>2</sub> emissions by country</caption>
+            <caption>Fossil CO<sub>2</sub> emissions by country</caption>
             <thead>
             <tr>
                 <th>Country</th>
@@ -76,6 +79,7 @@
                 <th>% of global emissions</th>
             </tr>
             </thead>
+            <tbody>
             <tr>
                 <td>China</td>
                 <td>1,433,783,686</td>
@@ -104,10 +108,13 @@
                 <td>12.30 tons</td>
                 <td>4.76%</td>
             </tr>
+            </tbody>
+            <tfoot>
             <tr>
                <td colspan="4">Total %</td>
                 <td>54.49%</td>
             </tr>
+            </tfoot>
         </table>
     </main>
 
