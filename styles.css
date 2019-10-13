@@ -33,15 +33,16 @@ footer {
     text-align: center;
 }
 
-table {
+#container nav table {
     border: 2px solid black;
     padding: 5px;
     margin: auto;
+    font-weight: bold;
 }
 
-td, th {
+#container nav td {
     border: 2px solid black;
     padding: 20px;
-    font-weight: bold;
     margin-left: 20px;
 }
+

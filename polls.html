@@ -6,8 +6,9 @@
     <title>ClimateSite</title>
     <meta name="description" content="Our climate site - polls">
     <meta name="keywords" content="climate, warming, temperature, poll, quiz">
-
-   <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 
@@ -48,10 +49,10 @@
     </nav>
 
     <main>
-        <table style="border: 0">
+        <table style="border: 0" class="table table-bordered">
             <tr>
                 <td>
-                    <form style="padding-top: 10px">
+                    <form >
                         1. Which of these has the negative impact on the climate?<br>
                         <label>
                             <input type="checkbox" name="poll1" value="Coal">
@@ -70,7 +71,7 @@
                     </form>
                 </td>
                 <td>
-                    <form style="padding-top: 10px">
+                    <form >
                         2. Which of the following is a greenhouse gas?<br>
                         <label>
                             <input type="radio" name="poll2" value="co2">
