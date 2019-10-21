@@ -19,7 +19,7 @@
 
         p.center {
             text-align: center;
-            color: greenyellow;
+            color: darkblue;
         }
 
         * {
@@ -43,6 +43,17 @@
 
         label:last-of-type {
             color: orangered;
+        }
+
+        #noplanetb{
+            height: auto;
+            transition: all .2s ease-in-out;
+            margin: auto;
+
+        }
+        #noplanetb:hover{
+            transform: scale(1.1);
+            box-shadow: 10px 10px 10px black;
         }
 
     </style>
@@ -91,8 +102,10 @@
     <main>
 
         <h1>The Effects of Climate Change</h1>
-        <img src="https://climate.nasa.gov/system/content_pages/main_images/1320_effects-image.jpg" width=700
-             alt="Effect">
+        <div >
+            <img  src="https://climate.nasa.gov/system/content_pages/main_images/1320_effects-image.jpg"
+                 alt="Effect">
+        </div>
         <p id="par1">
             Global climate change has already had observable effects on the environment. Glaciers have shrunk, ice on
             rivers and lakes is breaking up earlier, plant and animal ranges have shifted and trees are flowering
@@ -162,7 +175,7 @@
             <label>Heat</label> |
             <label>Floods</label>
         </div>
-        <img src="thereisnoplanetb.png" width=630 height=98 alt="There is no planet B">
+        <img id="noplanetb" src="thereisnoplanetb.png" width=630 height=98 alt="There is no planet B">
     </main>
 
     <footer>
