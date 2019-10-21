@@ -6,7 +6,7 @@
     <title>ClimateSite</title>
     <meta name="description" content="Our climate site - feedback">
     <meta name="keywords" content="climate, warming, temperature, feedback">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
@@ -17,6 +17,17 @@
             margin-right: 200px;
             background-attachment: scroll;
         }
+
+        #spanish img {
+            display: none;
+        }
+
+        #spanish:hover img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
     </style>
 </head>
 <body>
@@ -25,7 +36,7 @@
 
     <header>
         <a href="homepage.html" title="Go to homepage">
-            <img src="images/logo.png"  class="img-fluid" alt="Logo">
+            <img src="images/logo.png" class="img-fluid" alt="Logo">
         </a>
     </header>
 
@@ -53,7 +64,7 @@
                 <td>
                     <a href="feedback.html">Feedback</a>
                 </td>
-                 <td>
+                <td>
                     <a href="gallery.html">Gallery</a>
                 </td>
             </tr>
@@ -63,20 +74,27 @@
     <main>
 
         <h1>Give us your feedback!</h1>
-        <br>
-        <h3>Write your feedback</h3>
-        <form id="usrform">
-            Name: <label>
-            <input type="text" name="usrname">
-        </label>
-            <input type="submit">
-        </form>
-        <br>
-        <label>
-            <textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea>
-        </label>
-        <p><b>Note:</b> The form attribute is not supported in IE.</p>
-        <br>
+        <div class="clearfix">
+            <div style="float: left;">
+                <h3>Write your feedback</h3>
+                <form id="usrform" style="float:left">
+                    Name: <label>
+                    <input type="text" name="usrname">
+                </label>
+                    <input type="submit" >
+                </form>
+                <div style="clear: both"></div>
+                <label>
+                    <textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea>
+                </label>
+                <p><b>Note:</b> The form attribute is not supported in IE.</p>
+            </div>
+            <div id="spanish" style="text-align: center">
+                <p>Do not point the cursor at this text!</p>
+                <img id="hideImg" src="images/spanishinq.jpg" alt="Nobody expects the spanish inq">
+
+            </div>
+        </div>
 
         <h3>Select you gender</h3>
         <form>

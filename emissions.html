@@ -11,6 +11,35 @@
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
+        #emissionstable {
+            width: 90%;
+            margin: auto;
+            color: floralwhite;
+        }
+
+        #emissionstable tr:nth-child(odd) {
+            background-color: #1d2124;
+        }
+
+        #emissionstable tr:nth-child(even) {
+            background-color: #121416;
+        }
+
+        #emissionstable td, #emissionstable th {
+            padding: 10px;
+            text-align: center;
+        }
+
+        #emissionstable > tbody > tr:hover {
+            background-color: #404040;
+        }
+
+        #emissionstable caption {
+            color: black;
+            text-align: center;
+            font-size: 18px;
+            caption-side: top;
+        }
 
     </style>
 </head>
@@ -20,7 +49,7 @@
 
     <header>
         <a href="homepage.html" title="Go to homepage">
-            <img src="images/logo.png"  class="img-fluid" alt="Logo">
+            <img src="images/logo.png" class="img-fluid" alt="Logo">
         </a>
     </header>
 
@@ -48,7 +77,7 @@
                 <td>
                     <a href="feedback.html">Feedback</a>
                 </td>
-                 <td>
+                <td>
                     <a href="gallery.html">Gallery</a>
                 </td>
             </tr>
@@ -56,10 +85,10 @@
     </nav>
 
     <main>
-        <table id="emissionstable" class="table table-dark  table-bordered table-striped" style="border: 2px solid #343a40">
+        <table id="emissionstable" class="" style="border: 2px solid #343a40">
             <caption>Fossil CO<sub>2</sub> emissions by country</caption>
-            <thead >
-            <tr>
+            <thead>
+            <tr style="background-color: black">
                 <th scope="col">Country</th>
                 <th scope="col">Population</th>
                 <th scope="col">Total emissions</th>
@@ -67,7 +96,7 @@
                 <th scope="col">% of global emissions</th>
             </tr>
             </thead>
-            <tbody >
+            <tbody>
             <tr>
                 <th scope="row">China</th>
                 <td>1,433,783,686</td>

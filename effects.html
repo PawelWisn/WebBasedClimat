@@ -6,24 +6,45 @@
     <title>ClimateSite</title>
     <meta name="description" content="Our climate site - effects">
     <meta name="keywords" content="climate, warming, temperature, effects, impact">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 
     <style>
-        #par1 {
+        #par1, #par2 {
             text-align: center;
             color: red;
         }
+
         p.center {
             text-align: center;
             color: greenyellow;
         }
+
         * {
             text-align: center;
             color: black;
         }
+
+        #firstHead ~ p {
+            font-family: "Fira Code", serif;
+            font-weight: lighter;
+        }
+
+        #labelSet > label {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        label:first-child {
+            color: deeppink;
+        }
+
+        label:last-of-type {
+            color: orangered;
+        }
+
     </style>
 </head>
 <body>
@@ -32,7 +53,7 @@
 
     <header>
         <a href="homepage.html" title="Go to homepage">
-            <img src="images/logo.png"  class="img-fluid" alt="Logo">
+            <img src="images/logo.png" class="img-fluid" alt="Logo">
         </a>
     </header>
 
@@ -60,7 +81,7 @@
                 <td>
                     <a href="feedback.html">Feedback</a>
                 </td>
-                 <td>
+                <td>
                     <a href="gallery.html">Gallery</a>
                 </td>
             </tr>
@@ -71,7 +92,7 @@
 
         <h1>The Effects of Climate Change</h1>
         <img src="https://climate.nasa.gov/system/content_pages/main_images/1320_effects-image.jpg" width=700
-             alt="Effect" >
+             alt="Effect">
         <p id="par1">
             Global climate change has already had observable effects on the environment. Glaciers have shrunk, ice on
             rivers and lakes is breaking up earlier, plant and animal ranges have shifted and trees are flowering
@@ -88,7 +109,7 @@
             temperature
             rise of 2.5 to 10 degrees Fahrenheit over the next century.
         </p>
-        <p>
+        <p id="par2">
             According to the IPCC, the extent of climate change effects on individual regions will vary over time and
             with the ability of different societal and environmental systems to mitigate or adapt to change.
         </p>
@@ -102,7 +123,7 @@
             of climate change are likely to be significant and to increase over time."
         </p>
 
-        <h2>Future Effects</h2>
+        <h2 id="firstHead">Future Effects</h2>
         <p>
             Some of the long-term effects of global climate change in the United States are as follows, according to the
             Third and Fourth National Climate Assessment Reports:
@@ -134,6 +155,13 @@
             frost-free season (more than eight weeks) are projected for the western U.S., particularly in high elevation
             and coastal areas. The increases will be considerably smaller if heat-trapping gas emissions are reduced.
         </p>
+        <div id="labelSet">
+            <label>Less water</label> |
+            <label>Famine</label> |
+            <label>Storms</label> |
+            <label>Heat</label> |
+            <label>Floods</label>
+        </div>
         <img src="thereisnoplanetb.png" width=630 height=98 alt="There is no planet B">
     </main>
 
