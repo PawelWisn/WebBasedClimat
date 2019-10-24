@@ -70,3 +70,13 @@ nav td {
     clear: both;
     display: table;
 }
+
+a[href^="mailto:"]{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+a[download]{
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
