@@ -7,39 +7,38 @@
     <meta name="description" content="Our climate site - emissions by country">
     <meta name="keywords" content="climate, warming, temperature, emissions">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
-        #emissionstable {
-            width: 90%;
-            margin: auto;
-            color: floralwhite;
-        }
+        /*#emissionstable {*/
+        /*    width: 90%;*/
+        /*    margin: auto;*/
+        /*    color: floralwhite;*/
+        /*}*/
 
-        #emissionstable tr:nth-child(odd) {
-            background-color: #1d2124;
-        }
+        /*#emissionstable tr:nth-child(odd) {*/
+        /*    background-color: #1d2124;*/
+        /*}*/
 
-        #emissionstable tr:nth-child(even) {
-            background-color: #121416;
-        }
+        /*#emissionstable tr:nth-child(even) {*/
+        /*    background-color: #121416;*/
+        /*}*/
 
-        #emissionstable td, #emissionstable th {
-            padding: 10px;
-            text-align: center;
-        }
+        /*#emissionstable td, #emissionstable th {*/
+        /*    padding: 10px;*/
+        /*    text-align: center;*/
+        /*}*/
 
-        #emissionstable > tbody > tr:hover {
-            background-color: #404040;
-        }
+        /*#emissionstable > tbody > tr:hover {*/
+        /*    background-color: #404040;*/
+        /*}*/
 
-        #emissionstable caption {
-            color: black;
-            text-align: center;
-            font-size: 18px;
-            caption-side: top;
-        }
+        /*#emissionstable caption {*/
+        /*    color: black;*/
+        /*    text-align: center;*/
+        /*    font-size: 18px;*/
+        /*    caption-side: top;*/
+        /*}*/
 
 
     </style>
@@ -86,8 +85,9 @@
     </nav>
 
     <main>
-        <table id="emissionstable" class="" style="border: 2px solid #343a40">
-            <caption>Fossil CO<sub>2</sub> emissions by country</caption>
+        <table id="emissionstable" class="table table-striped table-bordered table-dark table-hover"
+               style="border: 2px solid #343a40">
+            <caption style="color:black">Fossil CO<sub>2</sub> emissions by country</caption>
             <thead>
             <tr style="background-color: black">
                 <th scope="col">Country</th>
