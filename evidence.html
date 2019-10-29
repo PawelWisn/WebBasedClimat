@@ -11,20 +11,21 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 
     <style>
-        ul a{
-            color: hsla(240,100%,50%,1);
-        }
-        #srcLink{
-            color: hsla(322,80%,80%,1);
+        #srcLink {
+            color: hsla(322, 80%, 80%, 1);
             text-shadow: -1px 0 #404040, 0 1px #404040, 1px 0 #404040, 0 -1px #404040;
         }
+
         b {
-            color: rgba(200,100,40,1);
+            color: rgba(200, 100, 40, 1);
         }
-        h1{
-            color: rgba(4,3,2,1);
+
+        h1 {
+            color: rgba(4, 3, 2, 1);
         }
-        #absolutePos{
+
+
+        #absolutePos {
             position: relative;
             border-radius: 20px;
             width: 90%;
@@ -34,10 +35,52 @@
             padding-top: 20px;
             padding-bottom: 20px;
         }
-        #absolutePos img{
-            width:100px;
+
+        #absolutePos img {
+            width: 100px;
             height: auto;
             border-radius: 10px;
+        }
+
+        .mydropdown {
+            margin-bottom: 15px;
+        }
+
+        .mydropdown b {
+            font-size: 2em;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 15px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:not(:last-child) {
+            border-bottom: 1px solid black;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .column {
+            float: left;
+            padding: 20px;
+        }
+
+        .links {
+            width: 40%;
+        }
+
+        .links li {
+            list-style-type: none;
+
+        }
+
+        .absolutePic {
+            width: 60%;
         }
     </style>
 </head>
@@ -83,59 +126,77 @@
     </nav>
 
     <main>
-        <h1>Evidence of the climate change</h1>
-        <ul>
-            <li ><b>Global Temperature Rise</b>
-                <ol>
-                    <li><a href="https://climate.nasa.gov/vital-signs/global-temperature/">Global temperature</a></li>
-                    <li><a href="https://climate.nasa.gov/causes/">Causes</a></li>
-                </ol>
-            </li>
-            <li><b>Warming Oceans</b>
-                <ol>
-                    <li><a href="https://climatekids.nasa.gov/ocean/">What is happening in the ocean?</a>
+        <h1 style="text-align: center">Evidence of the climate change</h1>
+        <div class="clearfix">
+            <div class="links column">
+                <ul style="display:block">
+                    <li>
+                        <div class="mydropdown">
+                            <b>Global Temperature Rise</b>
+                            <div class="dropdown-content">
+                                <a href="https://climate.nasa.gov/vital-signs/global-temperature/">Global
+                                    temperature</a>
+                                <a href="https://climate.nasa.gov/causes/">Causes</a>
+                            </div>
+                        </div>
                     </li>
-                    <li><a href="https://climate.nasa.gov/climate_resources/40/">Video</a>
+                    <li>
+                        <div class="mydropdown">
+                            <b>Warming Oceans</b>
+                            <div class="dropdown-content">
+                                <a href="https://climatekids.nasa.gov/ocean/">What is happening in the ocean?</a>
+                                <a href="https://climate.nasa.gov/climate_resources/40/">Video</a>
+                                <a href="https://climate.nasa.gov/news/937">Antarctic ice mass loss</a>
+                            </div>
+                        </div>
                     </li>
-                    <li><a href="https://climate.nasa.gov/news/937">Antarctic ice mass loss</a></li>
-                </ol>
-            </li>
-            <li><b>Shrinking Ice Sheets</b>
-                <ol>
-                    <li><a href="https://climate.nasa.gov/internal_resources/98/">Vital Signs: Land Ice</a></li>
-                    <li><a href="https://climate.nasa.gov/interactives/global-ice-viewer/">Global Ice Viewer</a></li>
-                </ol>
-            </li>
-            <li><b>Glacial Retreat</b>
-                <ol>
-                    <li><a href="https://climate.nasa.gov/interactives/global-ice-viewer/">Interactive: Global Ice
-                        viewer</a></li>
-                </ol>
-            </li>
-        </ul>
-        <h2><a id="srcLink" href="https://climate.nasa.gov/evidence/"><i>Source</i></a></h2>
+                    <li>
+                        <div class="mydropdown">
+                            <b>Shrinking Ice Sheets</b>
+                            <div class="dropdown-content">
+                                <a href="https://climate.nasa.gov/internal_resources/98/">Vital Signs: Land Ice</a>
+                                <a href="https://climate.nasa.gov/interactives/global-ice-viewer/">Global Ice Viewer</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mydropdown">
+                            <b>Glacial Retreat</b>
+                            <div class="dropdown-content">
+                                <a href="https://climate.nasa.gov/interactives/global-ice-viewer/">Interactive: Global
+                                    Ice
+                                    viewer</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><h2><a style="text-align:center" id="srcLink" href="https://climate.nasa.gov/evidence/"><i>Source</i></a></h2></li>
+                </ul>
+            </div>
 
-        <div id="absolutePos">
-            <div style="position: absolute; top:10px; left: 10px">
-                <img src="images/gallery/greenblocks.jpg" alt="greenblocks">
-            </div>
-            <div style="position: absolute; top:140px; left: 150px">
-                <img style="" src="images/gallery/gate.jpeg" alt="gate">
-            </div>
-            <div style="position: absolute; top:120px; right: 60px">
-                <img style="" src="images/gallery/happy.png" alt="happy">
-            </div>
-            <div style="position: absolute; top:50px; right: 59%">
-                <img style="" src="images/gallery/thermometer.jpg" alt="thermometer">
-            </div>
-            <div style="position: absolute; top:180px; right: 40%">
-                <img style="" src="images/gallery/hurricane.jpg" alt="hurricane">
-            </div>
-            <div style="position: absolute; top:120px; right: 60px">
-                <img style="" src="images/gallery/melting.jpg" alt="melting">
-            </div>
-            <div style="position: absolute; top:40px; right:25%">
-                <img style="" src="images/gallery/chimney.jpg" alt="chimney">
+            <div class="absolutePic column">
+                <div id="absolutePos">
+                    <div style="position: absolute; top:10px; left: 10px">
+                        <img src="images/gallery/greenblocks.jpg" alt="greenblocks">
+                    </div>
+                    <div style="position: absolute; top:140px; left: 150px">
+                        <img style="" src="images/gallery/gate.jpeg" alt="gate">
+                    </div>
+                    <div style="position: absolute; top:120px; right: 60px">
+                        <img style="" src="images/gallery/happy.png" alt="happy">
+                    </div>
+                    <div style="position: absolute; top:50px; right: 59%">
+                        <img style="" src="images/gallery/thermometer.jpg" alt="thermometer">
+                    </div>
+                    <div style="position: absolute; top:180px; right: 40%">
+                        <img style="" src="images/gallery/hurricane.jpg" alt="hurricane">
+                    </div>
+                    <div style="position: absolute; top:120px; right: 60px">
+                        <img style="" src="images/gallery/melting.jpg" alt="melting">
+                    </div>
+                    <div style="position: absolute; top:40px; right:25%">
+                        <img style="" src="images/gallery/chimney.jpg" alt="chimney">
+                    </div>
+                </div>
             </div>
         </div>
     </main>

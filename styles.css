@@ -84,18 +84,19 @@ a[download]{
     text-decoration-style: double;
 }
 
-.dropdown{
+.mydropdown{
     position: relative;
     display: inline-block;
 }
 .dropdown-content{
     display: none;
     position: absolute;
-
+    background-color: navajowhite;
+    min-width: 100px;
     box-shadow: 10px 10px 5px dimgrey;
     z-index: 1;
 }
 
-.dropdown:hover .dropdown-content{
+.mydropdown:hover .dropdown-content{
     display: block;
 }
