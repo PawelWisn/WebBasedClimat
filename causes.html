@@ -10,19 +10,27 @@
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
-        div {
-            width: 70%;
-            padding: 10px;
-            border: 5px solid gray;
-            margin: 0;
-        }
-
         #bookmarksList {
             list-style-type: square;
         }
 
         p > a[target=_blank].overline{
             text-decoration: overline;
+        }
+        .linearGradient{
+            background-image: linear-gradient(to right,navajowhite, yellow, yellowgreen);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            box-shadow: inset 0 0 2px 2px forestgreen;
+        }
+        #rememberBox{
+            border-radius: 20px;
+            margin-top: 15px;
+            padding: 15px;
+            background-image: radial-gradient(yellowgreen,yellow,lightgreen);
+            width: 50%;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -68,7 +76,9 @@
     </nav>
 
     <main>
+        <div class="linearGradient">
         <h1>The causes of Climate Change</h1>
+        </div>
         <h3>Jump to the section:</h3>
         <ul id="bookmarksList">
             <li><a href="causes.html#C1">Greenhouse effect - gases</a></li>
@@ -145,7 +155,7 @@
             </p>
         </div>
 
-        <div style="margin-top: 15px">
+        <div id="rememberBox">
             <h2>Remember:</h2>
             <p style="border-style: dashed">Climate change because of people</p>
             <p style="border: 3px dotted #1d2124; border-radius: 15px">We must reduce carbon dioxide</p>

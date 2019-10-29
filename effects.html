@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
     <style>
         #par1, #par2 {
             text-align: center;
@@ -45,17 +45,42 @@
             color: orangered;
         }
 
-        #noplanetb{
-            height: auto;
+        #noplanetb {
+            background-image: linear-gradient(to bottom right, yellowgreen, palevioletred);
+            padding-top: 12px;
+            padding-bottom: 12px;
             transition: all .2s ease-in-out;
+            width: 60%;
             margin: auto;
-
+            font-size: 3em;
+            font-family: 'Liu Jian Mao Cao', cursive;
         }
-        #noplanetb:hover{
+
+        #noplanetb:hover {
             transform: scale(1.1);
             box-shadow: 10px 10px 10px black;
         }
 
+        #firstHead {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 30%;
+            margin: auto;
+            border: 10px solid;
+            background-image: linear-gradient(to right, rgba(0, 255, 0, 0), rgba(0, 255, 0, 1));
+            border-image: url(images/gallery/ice.jpg) 20 round;
+
+        }
+
+        #labelSet {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url("images/border.png") 15 round;
+            margin-bottom: 15px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 <body>
@@ -102,8 +127,9 @@
     <main>
 
         <h1>The Effects of Climate Change</h1>
-        <div >
-            <img  src="https://climate.nasa.gov/system/content_pages/main_images/1320_effects-image.jpg"
+        <div>
+            <img style="box-shadow:0 5px 5px 0 rgba(0,0,0,1),0 5px 5px 0  rgba(0,0,0,1); margin-bottom: 10px"
+                 src="https://climate.nasa.gov/system/content_pages/main_images/1320_effects-image.jpg"
                  alt="Effect">
         </div>
         <p id="par1">
@@ -175,7 +201,8 @@
             <label>Heat</label> |
             <label>Floods</label>
         </div>
-        <img id="noplanetb" src="thereisnoplanetb.png" width=630 height=98 alt="There is no planet B">
+        <div id="noplanetb">THERE IS NO PLANET B</div>
+        <!--        <img id="noplanetb" src="thereisnoplanetb.png" width=630 height=98 alt="There is no planet B">-->
     </main>
 
     <footer>

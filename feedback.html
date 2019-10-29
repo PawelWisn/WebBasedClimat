@@ -10,24 +10,7 @@
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
-        body {
-            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHM3FYq1Kx4L9sd0nDUb9RwYeS8bT-I-F4B87B_ZNVg91zrl_GOw");
-            background-repeat: no-repeat;
-            background-position: right;
-            margin-right: 200px;
-            background-attachment: scroll;
-        }
 
-        #spanish img {
-            display: none;
-        }
-
-        #spanish:hover img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 300px;
-        }
     </style>
 </head>
 <body>
@@ -74,27 +57,28 @@
     <main>
 
         <h1>Give us your feedback!</h1>
-        <div class="clearfix">
-            <div style="float: left;">
-                <h3>Write your feedback</h3>
-                <form id="usrform" style="float:left">
-                    Name: <label>
-                    <input type="text" name="usrname">
-                </label>
-                    <input type="submit">
-                </form>
-                <div style="clear: both"></div>
-                <label>
-                    <textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea>
-                </label>
-                <p><b>Note:</b> The form attribute is not supported in IE.</p>
-            </div>
-            <div id="spanish" style="text-align: center">
-                <p>Do not point the cursor at this text!</p>
-                <img id="hideImg" src="images/spanishinq.jpg" alt="Nobody expects the spanish inq">
 
-            </div>
+        <div style="text-align: center" class="dropdown">
+            <p>Point the cursor at this text to see something unexpected</p>
+            <img class="dropdown-content img-fluid" src="images/spanishinq.jpg" alt="Nobody expects the spanish inq">
         </div>
+
+        <div>
+            <h3>Write your feedback</h3>
+            <form id="usrform" style="float:left">
+                Name: <label>
+                <input type="text" name="usrname">
+            </label>
+                <input type="submit">
+            </form>
+
+            <div style="clear: both"></div>
+            <label>
+                <textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea>
+            </label>
+            <p><b>Note:</b> The form attribute is not supported in IE.</p>
+        </div>
+
 
         <h3>Select you gender</h3>
         <form>

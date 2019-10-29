@@ -9,6 +9,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+        ul a{
+            color: hsla(240,100%,50%,1);
+        }
+        #srcLink{
+            color: hsla(322,80%,80%,1);
+            text-shadow: -1px 0 #404040, 0 1px #404040, 1px 0 #404040, 0 -1px #404040;
+        }
+        b {
+            color: rgba(200,100,40,1);
+        }
+        h1{
+            color: rgba(4,3,2,1);
+        }
+        #absolutePos{
+            position: relative;
+            border-radius: 20px;
+            width: 90%;
+            height: 300px;
+            margin: auto;
+            background-image: linear-gradient(to top right, green, yellow, red);
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        #absolutePos img{
+            width:100px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
 
@@ -54,21 +85,19 @@
     <main>
         <h1>Evidence of the climate change</h1>
         <ul>
-            <li><b>Global Temperature Rise</b>
+            <li ><b>Global Temperature Rise</b>
                 <ol>
-                    <li><a href="https://climate.nasa.gov/vital-signs/global-temperature/">Earth's vital signs: Global
-                        temperature</a></li>
-                    <li><a href="https://climate.nasa.gov/causes/">Global Climate Change: Causes</a></li>
+                    <li><a href="https://climate.nasa.gov/vital-signs/global-temperature/">Global temperature</a></li>
+                    <li><a href="https://climate.nasa.gov/causes/">Causes</a></li>
                 </ol>
             </li>
             <li><b>Warming Oceans</b>
                 <ol>
-                    <li><a href="https://climatekids.nasa.gov/ocean/">Climate Kids: What is happening in the ocean?</a>
+                    <li><a href="https://climatekids.nasa.gov/ocean/">What is happening in the ocean?</a>
                     </li>
-                    <li><a href="https://climate.nasa.gov/climate_resources/40/">Video: Oceans of climate change</a>
+                    <li><a href="https://climate.nasa.gov/climate_resources/40/">Video</a>
                     </li>
-                    <li><a href="https://climate.nasa.gov/news/937">Article: Warming ocean causing most Antarctic ice
-                        shelf mass loss</a></li>
+                    <li><a href="https://climate.nasa.gov/news/937">Antarctic ice mass loss</a></li>
                 </ol>
             </li>
             <li><b>Shrinking Ice Sheets</b>
@@ -84,7 +113,31 @@
                 </ol>
             </li>
         </ul>
-        <h2><a href="https://climate.nasa.gov/evidence/"><i>Source</i></a></h2>
+        <h2><a id="srcLink" href="https://climate.nasa.gov/evidence/"><i>Source</i></a></h2>
+
+        <div id="absolutePos">
+            <div style="position: absolute; top:10px; left: 10px">
+                <img src="images/gallery/greenblocks.jpg" alt="greenblocks">
+            </div>
+            <div style="position: absolute; top:140px; left: 150px">
+                <img style="" src="images/gallery/gate.jpeg" alt="gate">
+            </div>
+            <div style="position: absolute; top:120px; right: 60px">
+                <img style="" src="images/gallery/happy.png" alt="happy">
+            </div>
+            <div style="position: absolute; top:50px; right: 59%">
+                <img style="" src="images/gallery/thermometer.jpg" alt="thermometer">
+            </div>
+            <div style="position: absolute; top:180px; right: 40%">
+                <img style="" src="images/gallery/hurricane.jpg" alt="hurricane">
+            </div>
+            <div style="position: absolute; top:120px; right: 60px">
+                <img style="" src="images/gallery/melting.jpg" alt="melting">
+            </div>
+            <div style="position: absolute; top:40px; right:25%">
+                <img style="" src="images/gallery/chimney.jpg" alt="chimney">
+            </div>
+        </div>
     </main>
 
     <footer>
