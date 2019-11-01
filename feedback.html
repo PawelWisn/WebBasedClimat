@@ -69,8 +69,17 @@
             <h3>Write your feedback</h3>
             <form id="usrform" style="float:left">
                 Name: <label>
-                <input type="text" name="usrname">
+                <input type="text"
+                       id="myText"
+                       value="Mickey">
             </label>
+                <button type="button"
+                        onclick="myFunction()">
+                    Try it
+                </button>
+
+                <p id="change_name"></p>
+
                 <input type="submit">
             </form>
 
@@ -131,4 +140,5 @@
 </div>
 
 </body>
+<script src="MyScript.js"></script>
 </html>
