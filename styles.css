@@ -100,3 +100,23 @@ a[download]{
 .mydropdown:hover .dropdown-content{
     display: block;
 }
+.list-group-item{
+    background-color:#d2d472;
+}
+.nav-pills .nav-link.active{
+    color: blue;
+    background-color:yellow;
+}
+.nav-tabs{
+    border: 2px solid black;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.jumbotron{
+    background-color: yellow;
+}

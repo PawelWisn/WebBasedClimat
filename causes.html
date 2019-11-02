@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
-        #bookmarksList {
-            list-style-type: square;
-        }
-
         p > a[target=_blank].overline{
             text-decoration: overline;
         }
@@ -32,6 +28,7 @@
             width: 50%;
             margin-bottom: 10px;
         }
+
     </style>
 </head>
 <body>
@@ -44,48 +41,49 @@
         </a>
     </header>
 
-    <nav>
-        <table>
-            <tr>
-                <td>
-                    <a href="homepage.html">Home</a>
-                </td>
-                <td>
-                    <a href="evidence.html">Evidence</a>
-                </td>
-                <td>
-                    <a href="causes.html">Causes</a>
-                </td>
-                <td>
-                    <a href="effects.html">Effects</a>
-                </td>
-                <td>
-                    <a href="emissions.html">Emissions</a>
-                </td>
-                <td>
-                    <a href="polls.html">Polls</a>
-                </td>
-                <td>
-                    <a href="feedback.html">Feedback</a>
-                </td>
-                <td>
-                    <a href="gallery.html">Gallery</a>
-                </td>
-            </tr>
-        </table>
+    <nav class="nav-tabs nav-justified">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="evidence.html">Evidence</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="causes.html">Causes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="effects.html">Effects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="emissions.html">Emissions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="polls.html">Polls</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="feedback.html">Feedback</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+        </ul>
     </nav>
 
     <main>
         <div class="linearGradient">
         <h1>The causes of Climate Change</h1>
         </div>
-        <h3>Jump to the section:</h3>
-        <ul id="bookmarksList">
-            <li><a href="causes.html#C1">Greenhouse effect - gases</a></li>
-            <li><a href="causes.html#C2">Changing natural atmospheric greenhouse - consequences</a></li>
-            <li><a href="causes.html#C3">The role of human activity</a></li>
-            <li><a href="causes.html#C4">Climate change report - download</a></li>
-        </ul>
+        <div class="dropdown">
+            <h3>Jump to the section:</h3>
+            <div class="dropdown-content">
+            <a class="dropdown-item" href="causes.html#C1">Greenhouse effect - gases</a>
+            <a class="dropdown-item" href="causes.html#C2">Changing natural atmospheric greenhouse - consequences</a>
+            <a class="dropdown-item" href="causes.html#C3">The role of human activity</a>
+            <a class="dropdown-item" href="causes.html#C4">Climate change report - download</a>
+            </div>
+            <br>
+        </div>
         <h2 id="C1">Greenhouse effect - gases</h2>
         <p id="demo" onclick="myFunction()">Click me to change my HTML content (innerHTML).</p>
         <dl>
@@ -122,17 +120,17 @@
             </dd>
         </dl>
         <h2 id="C2">Changing natural atmospheric greenhouse - consequences</h2>
-        <ul>
-            <li>On average, Earth will become warmer. Some regions may welcome warmer temperatures, but others may
+        <ul class="list-group">
+            <li class="list-group-item">On average, Earth will become warmer. Some regions may welcome warmer temperatures, but others may
                 not.
             </li>
-            <li>Warmer conditions will probably lead to more evaporation and precipitation overall, but individual
+            <li class="list-group-item">Warmer conditions will probably lead to more evaporation and precipitation overall, but individual
                 regions will vary, some becoming wetter and others dryer.
             </li>
-            <li>A stronger greenhouse effect will warm the oceans and partially melt glaciers and other ice, increasing
+            <li class="list-group-item">A stronger greenhouse effect will warm the oceans and partially melt glaciers and other ice, increasing
                 sea level. Ocean water also will expand if it warms, contributing further to sea level rise.
             </li>
-            <li>Meanwhile, some crops and other plants may respond favorably to increased atmospheric CO2, growing more
+            <li class="list-group-item">Meanwhile, some crops and other plants may respond favorably to increased atmospheric CO2, growing more
                 vigorously and using water more efficiently. At the same time, higher temperatures and shifting climate
                 patterns may change the areas where crops grow best and affect the makeup of natural plant communities.
             </li>
@@ -175,5 +173,5 @@
 </div>
 
 </body>
-<script src="MyScript.js"></script>
+
 </html>
