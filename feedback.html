@@ -62,10 +62,9 @@
                 <img class="img-fluid" src="images/spanishinq.jpg" alt="Nobody expects the spanish inq">
             </div>
         </div>
-
+        <form>
         <div>
             <h3>Write your feedback</h3>
-            <form style="float:left">
                 <div class="form-group">
                 <h4>Name:</h4><label for="myText">
                 <input class="form-control" type="text"
@@ -78,12 +77,9 @@
                 </button>
                 <p id="change_name"></p>
                 </div>
-                <div class="form-group">
-                <input class="btn btn-warning" type="submit">
-                </div>
-            </form>
             <div style="clear: both"></div>
             <div class="form-group">
+                <h4>Comment:</h4>
             <label for="comment">
                 <textarea class="form-control" rows="5" cols="50" name="comment" id="comment">Enter text here...</textarea>
             </label>
@@ -92,7 +88,6 @@
         </div>
 
         <h3>Select you gender</h3>
-        <form>
             <div class="form-check">
             <label for="radio1" class="form-check-label col-form-label-lg">
                 <input class="form-check-input" id="radio1" type="radio" name="genderradio" value="male" checked> Male
@@ -106,21 +101,16 @@
                 <input class="form-check-input" id="radio3" type="radio" name="genderradio" value="other"> Other
             </label>
             </div>
-        </form>
         <br>
 
         <h3>Send us a file</h3>
-        <form>
             Select a file:
             <div class="form-group">
             <input class="form-control-file" type="file" name="myFile">
             </div>
-            <input type="submit" class="btn btn-warning">
-        </form>
 
         <h3>What are you doing to stop climate change?</h3>
         <p>Use the multiple attribute to allow the user to select more than one value.</p>
-        <form>
             <div class="form-group">
             <label for="sel1"></label>
                 <select id="sel1" class="form-control" name="actions" size="4" multiple>
