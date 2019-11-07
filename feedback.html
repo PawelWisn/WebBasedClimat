@@ -57,62 +57,65 @@
         <h1>Give us your feedback!</h1>
 
         <div style="text-align: center" class="mydropdown">
-            <p>Point the cursor at this text to see something unexpected <span class="badge badge-pill badge-danger">Danger</span></p>
+            <p>Point the cursor at this text to see something unexpected <span class="badge badge-pill badge-danger">Danger</span>
+            </p>
             <div class="dropdown-content">
                 <img class="img-fluid" src="images/spanishinq.jpg" alt="Nobody expects the spanish inq">
             </div>
         </div>
         <form>
-        <div>
-            <h3>Write your feedback</h3>
+            <div>
+                <h3>Write your feedback</h3>
                 <div class="form-group">
-                <h4>Name:</h4><label for="myText">
-                <input class="form-control" type="text"
-                       id="myText"
-                       value="Mickey">
-            </label>
-                <button type="button"
-                        onclick="myFunction()">
-                    Try it
-                </button>
-                <p id="change_name"></p>
+                    <h4>Name:</h4><label for="myText">
+                    <input class="form-control" type="text"
+                           id="myText"
+                           value="Mickey">
+                </label>
+                    <button type="button"
+                            onclick="myFunction()">
+                        Try it
+                    </button>
+                    <p id="change_name"></p>
                 </div>
-            <div style="clear: both"></div>
-            <div class="form-group">
-                <h4>Comment:</h4>
-            <label for="comment">
-                <textarea class="form-control" rows="5" cols="50" name="comment" id="comment">Enter text here...</textarea>
-            </label>
+                <div style="clear: both"></div>
+                <div class="form-group">
+                    <h4>Comment:</h4>
+                    <label for="comment">
+                        <textarea class="form-control" rows="5" cols="50" name="comment"
+                                  id="comment">Enter text here...</textarea>
+                    </label>
+                </div>
+                <p><b>Note:</b> The form attribute is not supported in IE.</p>
             </div>
-            <p><b>Note:</b> The form attribute is not supported in IE.</p>
-        </div>
 
-        <h3>Select you gender</h3>
+            <h3>Select you gender</h3>
             <div class="form-check">
-            <label for="radio1" class="form-check-label col-form-label-lg">
-                <input class="form-check-input" id="radio1" type="radio" name="genderradio" value="male" checked> Male
-            </label>
-            <br>
-            <label for="radio2" class="form-check-label col-form-label-lg">
-                <input class="form-check-input" id="radio2" type="radio" name="genderradio" value="female"> Female
-            </label>
-            <br>
-            <label for="radio3" class="form-check-label col-form-label-lg">
-                <input class="form-check-input" id="radio3" type="radio" name="genderradio" value="other"> Other
-            </label>
+                <label for="radio1" class="form-check-label col-form-label-lg">
+                    <input class="form-check-input" id="radio1" type="radio" name="genderradio" value="male" checked>
+                    Male
+                </label>
+                <br>
+                <label for="radio2" class="form-check-label col-form-label-lg">
+                    <input class="form-check-input" id="radio2" type="radio" name="genderradio" value="female"> Female
+                </label>
+                <br>
+                <label for="radio3" class="form-check-label col-form-label-lg">
+                    <input class="form-check-input" id="radio3" type="radio" name="genderradio" value="other"> Other
+                </label>
             </div>
-        <br>
+            <br>
 
-        <h3>Send us a file</h3>
+            <h3>Send us a file</h3>
             Select a file:
             <div class="form-group">
-            <input class="form-control-file" type="file" name="myFile">
+                <input class="form-control-file" type="file" name="myFile">
             </div>
 
-        <h3>What are you doing to stop climate change?</h3>
-        <p>Use the multiple attribute to allow the user to select more than one value.</p>
+            <h3>What are you doing to stop climate change?</h3>
+            <p>Use the multiple attribute to allow the user to select more than one value.</p>
             <div class="form-group">
-            <label for="sel1"></label>
+                <label for="sel1"></label>
                 <select id="sel1" class="form-control" name="actions" size="4" multiple>
                     <option value="Travelling by public transport">Travelling by public transport</option>
                     <option value="Recycling">Recycling</option>

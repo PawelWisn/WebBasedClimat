@@ -18,10 +18,15 @@ nav {
     background-color: #b2fab4;
     padding-left: 20px;
     padding-right: 20px;
-    position: sticky;
-    position: -webkit-sticky;
-    top:0;
+    top: 0;
     z-index: 100;
+}
+
+@media only screen and (min-width: 877px) {
+    nav {
+        position: sticky;
+        position: -webkit-sticky;
+    }
 }
 
 main {
@@ -74,21 +79,22 @@ nav td {
     display: table;
 }
 
-a[href^="mailto:"]{
+a[href^="mailto:"] {
     text-decoration: underline;
     text-decoration-color: red;
 }
 
-a[download]{
+a[download] {
     text-decoration-line: underline;
     text-decoration-style: double;
 }
 
-.mydropdown{
+.mydropdown {
     position: relative;
     display: inline-block;
 }
-.dropdown-content{
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: navajowhite;
@@ -97,26 +103,30 @@ a[download]{
     z-index: 1;
 }
 
-.mydropdown:hover .dropdown-content{
+.mydropdown:hover .dropdown-content {
     display: block;
 }
-.list-group-item{
-    background-color:#d2d472;
+
+.list-group-item {
+    background-color: #d2d472;
 }
-.nav-pills .nav-link.active{
+
+.nav-pills .nav-link.active {
     color: blue;
-    background-color:yellow;
+    background-color: yellow;
 }
-.nav-tabs{
+
+.nav-tabs {
     border: 2px solid black;
     padding: 10px;
     font-weight: bold;
     font-size: 120%;
 }
 
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content {
     display: block;
 }
-.jumbotron{
+
+.jumbotron {
     background-color: yellow;
 }
