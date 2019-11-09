@@ -10,21 +10,23 @@
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
-        p > a[target=_blank].overline{
+        p > a[target=_blank].overline {
             text-decoration: overline;
         }
-        .linearGradient{
-            background-image: linear-gradient(to right,navajowhite, yellow, yellowgreen);
+
+        .linearGradient {
+            background-image: linear-gradient(to right, navajowhite, yellow, yellowgreen);
             padding-top: 20px;
             padding-bottom: 20px;
             text-align: center;
             box-shadow: inset 0 0 2px 2px forestgreen;
         }
-        #rememberBox{
+
+        #rememberBox {
             border-radius: 20px;
             margin-top: 15px;
             padding: 15px;
-            background-image: radial-gradient(yellowgreen,yellow,lightgreen);
+            background-image: radial-gradient(yellowgreen, yellow, lightgreen);
             width: 50%;
             margin-bottom: 10px;
         }
@@ -32,7 +34,7 @@
     </style>
     <script src="MyScript.js"></script>
 </head>
-<body>
+<body onload="fillIterativeCauses();">
 
 <div id="container">
 
@@ -73,20 +75,21 @@
 
     <main>
         <div class="linearGradient">
-        <h1>The causes of Climate Change</h1>
+            <h1>The causes of Climate Change</h1>
         </div>
-        <div class="dropdown">
+        <div class="dropdown" style="width:25%">
             <h3>Jump to the section:</h3>
             <div class="dropdown-content">
-            <a class="dropdown-item" href="causes.html#C1">Greenhouse effect - gases</a>
-            <a class="dropdown-item" href="causes.html#C2">Changing natural atmospheric greenhouse - consequences</a>
-            <a class="dropdown-item" href="causes.html#C3">The role of human activity</a>
-            <a class="dropdown-item" href="causes.html#C4">Climate change report - download</a>
+                <a class="dropdown-item" href="causes.html#C1">Greenhouse effect - gases</a>
+                <a class="dropdown-item" href="causes.html#C2">Changing natural atmospheric greenhouse -
+                    consequences</a>
+                <a class="dropdown-item" href="causes.html#C3">The role of human activity</a>
+                <a class="dropdown-item" href="causes.html#C4">Climate change report - download</a>
             </div>
             <br>
         </div>
         <h2 id="C1">Greenhouse effect - gases</h2>
-        <p id="par_change" onclick="changeParagraph()">Click me to change my HTML content (innerHTML).</p>
+        <p id="par_change" onclick="changeParagraph()">Click me to check what is a greenhouse gas.</p>
         <dl>
             <dt>Water vapor</dt>
             <dd style="font-size: 25px">- The most abundant greenhouse gas, but importantly, it acts as a feedback to
@@ -103,7 +106,7 @@
                 climate change.
             </dd>
             <dt>Methane</dt>
-            <dd style="font-size: 55%">- A hydrocarbon gas produced both through natural sources and human activities,
+            <dd>- A hydrocarbon gas produced both through natural sources and human activities,
                 including the
                 decomposition of wastes in landfills, agriculture, and especially rice cultivation, as well as ruminant
                 digestion and manure management associated with domestic livestock. On a molecule-for-molecule basis,
@@ -122,16 +125,20 @@
         </dl>
         <h2 id="C2">Changing natural atmospheric greenhouse - consequences</h2>
         <ul class="list-group">
-            <li class="list-group-item">On average, Earth will become warmer. Some regions may welcome warmer temperatures, but others may
+            <li class="list-group-item">On average, Earth will become warmer. Some regions may welcome warmer
+                temperatures, but others may
                 not.
             </li>
-            <li class="list-group-item">Warmer conditions will probably lead to more evaporation and precipitation overall, but individual
+            <li class="list-group-item">Warmer conditions will probably lead to more evaporation and precipitation
+                overall, but individual
                 regions will vary, some becoming wetter and others dryer.
             </li>
-            <li class="list-group-item">A stronger greenhouse effect will warm the oceans and partially melt glaciers and other ice, increasing
+            <li class="list-group-item">A stronger greenhouse effect will warm the oceans and partially melt glaciers
+                and other ice, increasing
                 sea level. Ocean water also will expand if it warms, contributing further to sea level rise.
             </li>
-            <li class="list-group-item">Meanwhile, some crops and other plants may respond favorably to increased atmospheric CO2, growing more
+            <li class="list-group-item">Meanwhile, some crops and other plants may respond favorably to increased
+                atmospheric CO2, growing more
                 vigorously and using water more efficiently. At the same time, higher temperatures and shifting climate
                 patterns may change the areas where crops grow best and affect the makeup of natural plant communities.
             </li>
@@ -150,7 +157,8 @@
                 dioxide, methane and nitrous oxide have caused much of the observed increase in Earth's temperatures
                 over
                 the past 50 years. The panel's full Summary for Policymakers report is online at <a
-                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_summary-for-policymakers.pdf" class="overline"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_summary-for-policymakers.pdf"
+                        class="overline"
                         target="_blank">https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_summary-for-policymakers.pdf</a>
             </p>
         </div>
@@ -163,11 +171,8 @@
             <p style="border-style: outset">Seas are full of plastic</p>
         </div>
 
-        <p>Iterating causes:</p>
-        <script>iteratingCauses()</script>
-        <br>
-        <p id="iter_causes"></p>
-        <script>iter_whileCauses()</script>
+        <p class="iteratingCauses">Iterating causes For:</p>
+        <p class="iteratingCauses">Iterating causes While</p>
 
         <h2 id="C4"><a href="downloads/AR5_SYR_FINAL_SPM.pdf" download>Climate change report - download</a></h2>
     </main>

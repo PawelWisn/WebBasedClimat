@@ -126,7 +126,3 @@ a[download] {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-.jumbotron {
-    background-color: yellow;
-}

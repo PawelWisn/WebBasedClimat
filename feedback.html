@@ -10,7 +10,21 @@
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
+        main {
+            width: 50%;
+        }
 
+        @media only screen and (max-width: 1021px) {
+            main {
+                width: 70%;
+            }
+        }
+
+        @media only screen and (max-width: 733px) {
+            main {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -52,7 +66,7 @@
         </ul>
     </nav>
 
-    <main>
+    <main style="margin: auto;">
 
         <h1>Give us your feedback!</h1>
 
@@ -69,12 +83,12 @@
                 <div class="form-group">
                     <h4>Name:</h4><label for="myText">
                     <input class="form-control" type="text"
-                           id="myText"
+                           id="feedbackName"
                            value="Mickey">
                 </label>
                     <button type="button"
-                            onclick="myFunction()">
-                        Try it
+                            onclick="validateName()">
+                        Validate
                     </button>
                     <p id="change_name"></p>
                 </div>
@@ -136,6 +150,6 @@
         123456789
     </footer>
 </div>
-
+<script src="MyScript.js"></script>
 </body>
 </html>

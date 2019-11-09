@@ -12,29 +12,18 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 
     <style>
-        h2{
+        h2 {
             color: #0c5460;
         }
 
-         h1 + p {
-             background-color: #7fbb22;
-         }
+        p {
+            color: black;
+            font-size: 1.1em;
+        }
     </style>
 
-    <script>
-        let d = new Date();
-        if (d.getHours() < 18)
-        {
-            greeting = "Good day! It's before 18";
-        }
-        else
-        {
-            greeting = "Good night! It's after 18"
-        }
-        alert("Today's date is " + d + "   " + greeting);
-    </script>
 </head>
-<body>
+<body onload="setInterval(updateClock, 1000);">
 
 <div id="container">
 
@@ -74,6 +63,7 @@
     </nav>
 
     <main>
+        <h4 id="clock" style="text-align: center; min-height: 1.1em">00:00:00</h4>
         <h1 style="color:black;text-align:center; text-shadow: 3px 3px 5px orangered">Global warming - what is it?</h1>
         <p>
             Global warming is the long-term rise in the average temperature of the Earth's climate system. It is a major
@@ -85,8 +75,9 @@
             prehistoric periods of global warming, but observed changes since the mid-20th century have been much
             greater than those seen in previous records covering decades to thousands of years.
         </p>
-        <div class="jumbotron">
-        <h2 style=" box-shadow: 5px 5px black;background-color: greenyellow;text-align: center">Save Our Planet!</h2>
+        <div style="margin-top:10px;margin-bottom:15px;">
+            <h2 style=" box-shadow: 5px 5px black;background-color: greenyellow;text-align: center;padding:5px">Save Our
+                Planet!</h2>
         </div>
         <p>
             Apart from war, nothing so profoundly affects the future of all men as much as pollution. Daily, now, the
@@ -109,6 +100,7 @@
         123456789
     </footer>
 </div>
-
+<script src="MyScript.js"></script>
 </body>
 </html>
+
