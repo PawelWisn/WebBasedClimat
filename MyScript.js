@@ -84,3 +84,15 @@ function validateName() {
 
 }
 
+// gallery.html
+function constOpacity(object) {
+    object.style.opacity = 1;
+}
+
+function setIDs() {
+    let pics = document.querySelectorAll("main img");
+
+    for(let i = 0; i < pics.length; i++){
+        pics[i].id = "img" + i;
+    }
+}
