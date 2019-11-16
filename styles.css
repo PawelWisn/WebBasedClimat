@@ -22,7 +22,7 @@ nav {
     z-index: 100;
 }
 
-@media only screen and (min-width: 877px) {
+@media only screen and (min-width: 944px) {
     nav {
         position: sticky;
         position: -webkit-sticky;
