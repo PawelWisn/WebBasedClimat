@@ -2,6 +2,11 @@ let donateSum = 0;
 const $main = $('main').first();
 const $atList = $("#attendance_list").first();
 const signed_people = {};
+let currentCity;
+const inputHTML = "<form class='par_caption' style='background-color: inherit'>\
+    <input type='text' name='newGuyName' id='nameInput' placeholder='Your name'>\
+    <input type='button' value='Enroll' onclick='signToTheList()'>\
+   </form> ";
 
 function setMainMinHeight() {
     let logo = $('header a img').outerHeight(true);
@@ -31,21 +36,21 @@ function create_pic_caption_class() {
     $('<style>')
         .prop("type", "text/css")
         .html("\
-        .pic_caption > img{\
-        max-width: 100%;\
-        max-height: 100%;\
-        \
-        }").appendTo('head');
-
-    $('<style>')
-        .prop("type", "text/css")
-        .html("\
         .par_caption{\
         text-align: center;\
         font-size: 2em;\
         background-color: #EDEAE0;\
         font-family: 'Indie Flower', cursive;\
         letter-spacing: 10px;\
+        }").appendTo('head');
+
+    $('<style>')
+        .prop("type", "text/css")
+        .html("\
+        .pic_caption > img{\
+        max-width: 100%;\
+        max-height: 100%;\
+        \
         }").appendTo('head');
 }
 
@@ -57,9 +62,8 @@ function createPicWithCaptionHTML(city) {
 }
 
 function insertProtestPlaces(arrayOfCities) {
-    console.log('insertProtestPlaces');
     if (jQuery.isEmptyObject(signed_people)) {
-        for(let cityName of arrayOfCities){
+        for (let cityName of arrayOfCities) {
             signed_people[cityName] = ["<h1 style=\"font-family: 'Calistoga', cursive; text-align: center;text-decoration: underline;font-size: 3.3em;\">People Signed Up:</h1>"];
         }
     }
@@ -68,30 +72,30 @@ function insertProtestPlaces(arrayOfCities) {
 
     create_pic_caption_class();
 
-    for(let cityName of arrayOfCities){
-        console.log(cityName);
+    for (let cityName of arrayOfCities) {
         city_set_div.append(createPicWithCaptionHTML(cityName));
-        $('#' + cityName).on('click', ()=>{
+        $('#' + cityName).on('click', () => {
             displaySignedList(cityName);
+            currentCity = cityName;
             //TODO highlight city img
         });
     }
 
 }
 
-function signToTheList(city) {
-    signed_people[city].push("<h1 style=\"font-family: 'Calistoga', cursive; text-align: center\">name prague</h1>");
-    signed_people[city].push("<h1 style=\"font-family: 'Calistoga', cursive; text-align: center\">name2 prague</h1>");
-    signed_people[city].push("<h1 style=\"font-family: 'Calistoga', cursive; text-align: center\">name3 prague</h1>");
-    signed_people[city].push("<h1 style=\"font-family: 'Calistoga', cursive; text-align: center\">name4 prague</h1>");
+function signToTheList() {
+    let name = $('#nameInput').val();
+    signed_people[currentCity].push("<h1 style=\"font-family: 'Calistoga', cursive; text-align: center\">" + name + "</h1>");
+    displaySignedList(currentCity)
 }
 
+
 function displaySignedList(city) {
-    console.log('buildListToDisplay');
     $atList.empty();
     for (let element of signed_people[city]) {
         $atList.append(element);
     }
+    $atList.append(inputHTML);
 }
 
 
@@ -100,6 +104,5 @@ $(window).on('resize', setMainMinHeight);
 
 insertProtestPlaces(['prague', 'valencia', 'athens']);
 
-signToTheList('prague');
 
 
