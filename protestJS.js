@@ -3,6 +3,8 @@ const $main = $('#protestMain').first();
 const $atList = $("#attendance_list").first();
 const signed_people = {};
 let currentCity;
+const defaultColor = '#EDEAE0';
+const activeColor = '#ffcc00';
 const inputHTML = "<form class='par_caption' style='background-color: inherit'>\
     <input type='text' name='newGuyName' id='nameInput' placeholder='Your name'>\
     <input type='button' value='Enroll' id='enrollBut' onclick='signToTheList()'>\
@@ -49,7 +51,7 @@ function create_pic_caption_class() {
         .par_caption{\
         text-align: center;\
         font-size: 2em;\
-        background-color: #EDEAE0;\
+        background-color: " + defaultColor + ";\
         font-family: 'Indie Flower', cursive;\
         letter-spacing: 5px;\
         }").appendTo('head');
@@ -86,11 +88,19 @@ function insertProtestPlaces(arrayOfCities) {
         city_set_div.append(createPicWithCaptionHTML(cityName));
         $('#' + cityName).on('click', () => {
             displaySignedList(cityName);
+            recolor(currentCity, defaultColor);
             currentCity = cityName;
-            //TODO highlight city img
+            recolor(currentCity, activeColor);
         });
     }
 
+}
+
+function recolor(cityName, color) {
+    let $p = $('#' + cityName + " > p").first();
+    if ($p) {
+        $($p).css('background-color', color);
+    }
 }
 
 function signToTheList() {
