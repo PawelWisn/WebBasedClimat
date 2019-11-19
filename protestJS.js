@@ -97,6 +97,7 @@ function signToTheList() {
     let name = $('#nameInput').val();
     signed_people[currentCity].push("<h1 style=\"font-family: 'Calistoga', cursive; text-align: center\">" + name + "</h1>");
     displaySignedList(currentCity);
+    window.scrollTo(0, $(window).height());
 }
 
 
@@ -113,7 +114,6 @@ function donate() {
     newDonation = parseFloat(newDonation);
     if (!isNaN(newDonation)) {
         donateSum += newDonation;
-        console.log('donating');
         $('#donateLabel').text('Total Donations: ' + donateSum);
     } else {
         alert('Invalid input! Number required');
