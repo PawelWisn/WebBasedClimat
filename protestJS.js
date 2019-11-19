@@ -1,11 +1,11 @@
 let donateSum = 0;
-const $main = $('main').first();
+const $main = $('#protestMain').first();
 const $atList = $("#attendance_list").first();
 const signed_people = {};
 let currentCity;
 const inputHTML = "<form class='par_caption' style='background-color: inherit'>\
     <input type='text' name='newGuyName' id='nameInput' placeholder='Your name'>\
-    <input type='button' value='Enroll' onclick='signToTheList()'>\
+    <input type='button' value='Enroll' id='enrollBut' onclick='signToTheList()'>\
    </form> ";
 
 function setMainMinHeight() {
@@ -24,14 +24,24 @@ function setMainMinHeight() {
     $($main).css('minHeight', newMinHeight);
 }
 
+function insertProtestHeader() {
+    $main.prepend('<h1 id="joinHeader" style="font-family: \'Calistoga\', cursive; text-align: center">Join out protests!</h1>');
+}
+
 function create_pic_caption_class() {
     $('<style>')
         .prop("type", "text/css")
         .html("\
         .pic_caption{\
-        \
+        border-radius: 10px;\
         }").appendTo('head');
-    //TODO hover cursor
+
+    $('<style>')
+        .prop("type", "text/css")
+        .html("\
+        .pic_caption:hover{\
+        cursor:pointer;\
+        }").appendTo('head');
 
     $('<style>')
         .prop("type", "text/css")
@@ -41,7 +51,7 @@ function create_pic_caption_class() {
         font-size: 2em;\
         background-color: #EDEAE0;\
         font-family: 'Indie Flower', cursive;\
-        letter-spacing: 10px;\
+        letter-spacing: 5px;\
         }").appendTo('head');
 
     $('<style>')
@@ -86,7 +96,7 @@ function insertProtestPlaces(arrayOfCities) {
 function signToTheList() {
     let name = $('#nameInput').val();
     signed_people[currentCity].push("<h1 style=\"font-family: 'Calistoga', cursive; text-align: center\">" + name + "</h1>");
-    displaySignedList(currentCity)
+    displaySignedList(currentCity);
 }
 
 
@@ -98,11 +108,37 @@ function displaySignedList(city) {
     $atList.append(inputHTML);
 }
 
+function donate() {
+    let newDonation = prompt("How much money would you like to donate?", "5");
+    newDonation = parseFloat(newDonation);
+    if (!isNaN(newDonation)) {
+        donateSum += newDonation;
+        console.log('donating');
+        $('#donateLabel').text('Total Donations: ' + donateSum);
+    } else {
+        alert('Invalid input! Number required');
+    }
+}
 
-$(setMainMinHeight); //run when document loads
+function buildDonationHTML() {
+    console.log('buildDonationHTML');
+    let buttonHTML = "<div><button id='donateBtn' onclick='donate()' class='btn btn-warning' style='margin-bottom: 5px'>Donate</button></div>";
+    let labelHTML = "<label style='padding-top: 7px; margin-left: 15px;' id='donateLabel'>Total Donations: 0</label>";
+    let total = "<div class='row'>" + buttonHTML + labelHTML + "</div>";
+    $('#joinHeader').after(total);
+}
+
+//run when document loads
+$(setMainMinHeight);
+$(insertProtestHeader);
+$(buildDonationHTML);
+$(() => {
+    insertProtestPlaces(['prague', 'valencia', 'athens'])
+});
+
 $(window).on('resize', setMainMinHeight);
 
-insertProtestPlaces(['prague', 'valencia', 'athens']);
+
 
 
 
