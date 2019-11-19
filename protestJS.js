@@ -97,9 +97,9 @@ function insertProtestPlaces(arrayOfCities) {
 }
 //
 function recolor(cityName, color) {
-    let $p = $('#' + cityName + " > p").first();
-    if ($p) {
-        $($p).css('background-color', color);
+    let $p = $('#' + cityName + " > p").first(); //first results in jqery element
+    if ($p.length) {
+        ($p).css('background-color', color); //
     }
 }
 
@@ -113,9 +113,8 @@ function signToTheList() {
 
 function displaySignedList(city) {
     $atList.empty();
-    for (let element of signed_people[city]) {
-        $atList.append(element);
-    }
+    $atList.append();
+    $atList.append(signed_people[city]); // Implicit iteration.
     $atList.append(inputHTML);
 }
 
@@ -147,8 +146,3 @@ $(() => {
 });
 
 $(window).on('resize', setMainMinHeight);
-
-
-
-
-
