@@ -95,7 +95,7 @@ function insertProtestPlaces(arrayOfCities) {
     }
 
 }
-
+//
 function recolor(cityName, color) {
     let $p = $('#' + cityName + " > p").first();
     if ($p) {
