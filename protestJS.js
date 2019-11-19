@@ -26,6 +26,7 @@ function create_pic_caption_class() {
         .pic_caption{\
         \
         }").appendTo('head');
+    //TODO hover cursor
 
     $('<style>')
         .prop("type", "text/css")
@@ -59,7 +60,7 @@ function insertProtestPlaces(arrayOfCities) {
     console.log('insertProtestPlaces');
     if (jQuery.isEmptyObject(signed_people)) {
         for(let cityName of arrayOfCities){
-            signed_people[cityName] = [];
+            signed_people[cityName] = ["<h1 style=\"font-family: 'Calistoga', cursive; text-align: center;text-decoration: underline;font-size: 3.3em;\">People Signed Up:</h1>"];
         }
     }
 
@@ -71,22 +72,25 @@ function insertProtestPlaces(arrayOfCities) {
         console.log(cityName);
         city_set_div.append(createPicWithCaptionHTML(cityName));
         $('#' + cityName).on('click', ()=>{
-            buildListToDisplay(cityName);
+            displaySignedList(cityName);
+            //TODO highlight city img
         });
     }
 
 }
 
 function signToTheList(city) {
-    signed_people[city].push("<h1 style=\"font-family: 'Calistoga', cursive; text-align: center\">name surname</h1>");
+    signed_people[city].push("<h1 style=\"font-family: 'Calistoga', cursive; text-align: center\">name prague</h1>");
+    signed_people[city].push("<h1 style=\"font-family: 'Calistoga', cursive; text-align: center\">name2 prague</h1>");
+    signed_people[city].push("<h1 style=\"font-family: 'Calistoga', cursive; text-align: center\">name3 prague</h1>");
+    signed_people[city].push("<h1 style=\"font-family: 'Calistoga', cursive; text-align: center\">name4 prague</h1>");
 }
 
-function buildListToDisplay() {
+function displaySignedList(city) {
     console.log('buildListToDisplay');
     $atList.empty();
-    for (let element in signed_people[this.id]) {
-        //$atList.append(element);
-        console.log(signed_people[this.id]);
+    for (let element of signed_people[city]) {
+        $atList.append(element);
     }
 }
 
