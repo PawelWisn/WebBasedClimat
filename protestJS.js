@@ -15,15 +15,13 @@ function setMainMinHeight() {
     let nav = $('nav').outerHeight(true);
     let foot = $('footer').outerHeight(true);
 
-
     let newMinHeight =
         $(window).height()
         - logo
         - nav
         - foot
         + 'px';
-
-    $($main).css('minHeight', newMinHeight);
+    $($('main').first()).css('minHeight', newMinHeight);
 }
 
 function insertProtestHeader() {
@@ -95,11 +93,12 @@ function insertProtestPlaces(arrayOfCities) {
     }
 
 }
+
 //
 function recolor(cityName, color) {
     let $p = $('#' + cityName + " > p").first(); //first results in jqery element
     if ($p.length) {
-        ($p).css('background-color', color); //
+        ($p).css('background-color', color);
     }
 }
 
@@ -107,7 +106,7 @@ function signToTheList() {
     let name = $('#nameInput').val();
     signed_people[currentCity].push("<h1 style=\"font-family: 'Calistoga', cursive; text-align: center\">" + name + "</h1>");
     displaySignedList(currentCity);
-    window.scrollTo(0, $(window).height());
+    window.scrollTo(0, $('window').height());
 }
 
 
