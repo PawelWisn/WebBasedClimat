@@ -96,3 +96,17 @@ function setIDs() {
         pics[i].id = "img" + i;
     }
 }
+
+const mailUrl ='http://127.0.0.1:8000/sendmail';
+let mailData={
+    to:"zwt22849@eveav.com",
+    subject:"hhhh",
+    body:"elo kurła raz dwa czy"
+};
+
+function sendMail(){
+    mailData.to = document.getElementById('mailTo').value;
+    mailData.body = document.getElementById('mailBody').value;
+    mailData.subject = document.getElementById('mailSubject').value;
+    $.post(mailUrl,mailData);
+}
